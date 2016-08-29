@@ -20,7 +20,7 @@ angular.module('ReeganExE', [
     'ngAnimate',
     'angular-loading-bar',
     'ui.bootstrap',
-    'ngCookie'
+    'ngCookies'
   ])
   .config(function($locationProvider, $urlRouterProvider, cfpLoadingBarProvider) {
 
