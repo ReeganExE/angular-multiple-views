@@ -19,6 +19,7 @@
     angular.module('ReeganExE')
         .constant('URL', {
             posts: `${host}posts/:id`,
-            comments: `${host}comments?postId=:postId`
+            comments: `${host}comments?postId=:postId`,
+            samplePhoto: '//placehold.it/400x300'
         });
 })();

@@ -45,10 +45,10 @@
 
       })
 
-      .controller('PhotoController', function() {
+      .controller('PhotoController', function(URL) {
         var vm = this,
             sample = {
-              src: 'http://placehold.it/400x300'
+              src: URL.samplePhoto
             };
 
         angular.extend(vm, {
