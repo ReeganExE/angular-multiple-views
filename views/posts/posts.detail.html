@@ -1,0 +1,42 @@
+<!--
+/**
+ * Angular UI Router Multiple Views Example
+ *
+ * @author Ninh Pham
+ * Website: https://ReeganExE.github.io/angular-multiple-views
+ * Contact: dongian.rapclubkhtn@gmail.com
+ *
+ * https://www.facebook.com/ReeganExE
+ * https://www.twitter.com/ReeganExE
+ * https://www.google.com/+ReeganExE
+ * https://github.com/ReeganExE
+ * https://youtube.com/ReeganExE
+ */
+ -->
+
+<div class="panel panel-primary">
+
+    <div class="panel-heading">
+        <div class="panel-title">{{ vm.name }}</div>
+    </div>
+
+
+    <div class="panel-body">
+        <uib-tabset type="pills" active="vm.activeTab">
+          <uib-tab index="0" heading="Content">
+            <h3 class="capitalize">{{ vm.post.title }}</h3>
+            <div class="well">
+              {{ vm.post.body }}
+            </div>
+          </uib-tab>
+          <uib-tab index="1" heading="Comments">
+            <div ui-view="comments"></div>
+            <div ui-view="add-comment"></div>
+          </uib-tab>
+          <uib-tab index="2" heading="Photos">
+            <div ui-view="photos"></div>
+          </uib-tab>
+        </uib-tabset>
+    </div>
+
+</div>

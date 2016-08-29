@@ -1,0 +1,78 @@
+<!--
+/**
+ * Angular UI Router Multiple Views Example
+ *
+ * @author Ninh Pham
+ * Website: https://ReeganExE.github.io/angular-multiple-views
+ * Contact: dongian.rapclubkhtn@gmail.com
+ *
+ * https://www.facebook.com/ReeganExE
+ * https://www.twitter.com/ReeganExE
+ * https://www.google.com/+ReeganExE
+ * https://github.com/ReeganExE
+ * https://youtube.com/ReeganExE
+ */
+ -->
+
+<!DOCTYPE html>
+<html ng-app="ReeganExE">
+  <head>
+
+    <base href="/">
+
+    <title>Angular UI Router Multiple Views Example - ReeganExE</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <!-- build:css css/app.css -->
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css">
+    <!-- endinject -->
+
+    <link rel="stylesheet" href="styles/css/app.css">
+
+    <!-- endbuild -->
+
+  </head>
+  <body>
+
+    <nav-bar></nav-bar>
+    <div class="container" id="main" ui-view></div>
+
+    <!-- build:js app.js -->
+
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/ng-cookies/dist/ng-cookies.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:js -->
+    <script src="app.js"></script>
+    <script src="directives/no-default.js"></script>
+    <script src="directives/nav-bar/nav-bar.js"></script>
+    <script src="common/api.js"></script>
+    <script src="common/const.js"></script>
+    <script src="views/about/about.js"></script>
+    <script src="views/home/home.js"></script>
+    <script src="views/not-found/not-found.js"></script>
+    <script src="views/posts/post.js"></script>
+    <script src="views/posts/posts.controller.js"></script>
+    <!-- endinject -->
+
+    <!-- endbuild -->
+
+  </body>
+</html>

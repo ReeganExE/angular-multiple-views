@@ -1,0 +1,22 @@
+<!--
+/**
+ * Angular UI Router Multiple Views Example
+ *
+ * @author Ninh Pham
+ * Website: https://ReeganExE.github.io/angular-multiple-views
+ * Contact: dongian.rapclubkhtn@gmail.com
+ *
+ * https://www.facebook.com/ReeganExE
+ * https://www.twitter.com/ReeganExE
+ * https://www.google.com/+ReeganExE
+ * https://github.com/ReeganExE
+ * https://youtube.com/ReeganExE
+ */
+ -->
+
+<div class="list-group">
+  <a href="#" ng-click="$event.preventDefault(); vm.showComment(comment, $last, $first)" class="list-group-item" ng-repeat="comment in vm.comments">
+    <h4 class="list-group-item-heading capitalize">{{ comment.name }} ({{ comment.email }})</h4>
+    <p class="list-group-item-text">{{ comment.body }}</p>
+  </a>
+</div>

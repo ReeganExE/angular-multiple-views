@@ -1,0 +1,63 @@
+body {
+  font-family: sans-serif;
+  overflow-y: scroll; }
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
+
+.output-links {
+  margin-top: 10px; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.searching {
+  opacity: 0.2; }
+
+.navbar-default {
+  background-color: #1E2227;
+  border: none; }
+
+.form-control {
+  color: black; }
+
+body {
+  background-image: none; }
+
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 6px; }
+
+.navbar {
+  box-shadow: 2px 1px 12px black; }
+
+#main {
+  margin-top: 62px; }
+  #main input[type="text"] {
+    background-color: white;
+    border-color: rgba(51, 122, 183, 0.3); }
+  #main textarea {
+    margin: 0px 0px 10px;
+    height: 150px;
+    background-color: #FFFFFF;
+    border: solid 1px #A8AEFF;
+    border-radius: 2px;
+    resize: none;
+    overflow: auto; }
+  #main .nav-pills {
+    margin-bottom: 15px; }
+
+.xactive {
+  border-bottom: 1px solid #33b5e5 !important;
+  color: #ffffff !important; }
+
+.quizs .remove {
+  color: red; }
+
+.quizs .share {
+  color: #2a9fd6; }

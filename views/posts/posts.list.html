@@ -1,0 +1,38 @@
+<!--
+/**
+ * Angular UI Router Multiple Views Example
+ *
+ * @author Ninh Pham
+ * Website: https://ReeganExE.github.io/angular-multiple-views
+ * Contact: dongian.rapclubkhtn@gmail.com
+ *
+ * https://www.facebook.com/ReeganExE
+ * https://www.twitter.com/ReeganExE
+ * https://www.google.com/+ReeganExE
+ * https://github.com/ReeganExE
+ * https://youtube.com/ReeganExE
+ */
+ -->
+
+<div class="panel panel-primary">
+
+    <div class="panel-heading">
+        <div class="panel-title">{{ vm.name }}</div>
+    </div>
+
+    <div class="panel-body">
+        <table class="table quizs">
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>User</th>
+            </tr>
+            <tr ng-repeat="post in vm.posts">
+                <td>{{ post.id }}</td>
+                <td><a class="capitalize" ui-sref="post_detail.detail({ id: post.id, post: post })">{{ post.title }}</a></td>
+                <td>{{ post.userId }}</td>
+            </tr>
+        </table>
+    </div>
+
+</div>

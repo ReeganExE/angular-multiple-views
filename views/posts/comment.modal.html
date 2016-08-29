@@ -1,0 +1,49 @@
+<!--
+/**
+ * Angular UI Router Multiple Views Example
+ *
+ * @author Ninh Pham
+ * Website: https://ReeganExE.github.io/angular-multiple-views
+ * Contact: dongian.rapclubkhtn@gmail.com
+ *
+ * https://www.facebook.com/ReeganExE
+ * https://www.twitter.com/ReeganExE
+ * https://www.google.com/+ReeganExE
+ * https://github.com/ReeganExE
+ * https://youtube.com/ReeganExE
+ */
+ -->
+
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Comment Detail</h3>
+</div>
+<div class="modal-body" id="modal-body">
+    <div class="row">
+      <label class="col-lg-2 control-label">By</label>
+      <div class="col-lg-10">
+        {{ vm.comment.name }}
+      </div>
+    </div>
+    <div class="row">
+      <label class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-8">
+        {{ vm.comment.email }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+            {{ vm.comment.body }}
+        </p>
+      </div>
+    </div>
+    <ul class="pager">
+      <li ng-class="{ disabled: vm.comment.isFirst }"><a no-default href="#" ng-click="vm.next(-1)" title="Previous comment">Previous</a></li>
+      <li ng-class="{ disabled: vm.comment.isLast }"><a no-default href="#" ng-click="vm.next(1)" title="Next comment">Next</a></li>
+    </ul>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="vm.dismiss()">OK</button>
+    <button class="btn btn-primary" type="button" ng-click="vm.showPhoto()" title="Show photo user's photos">Photos</button>
+    <button class="btn btn-warning" type="button" ng-click="vm.dismiss()">Cancel</button>
+</div>
