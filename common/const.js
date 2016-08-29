@@ -15,7 +15,7 @@
 (function() {
     'use strict';
 
-    var host = 'http://jsonplaceholder.typicode.com/';
+    var host = '//jsonplaceholder.typicode.com/';
     angular.module('ReeganExE')
         .constant('URL', {
             posts: `${host}posts/:id`,
