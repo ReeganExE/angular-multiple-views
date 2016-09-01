@@ -1,5 +1,7 @@
 # Angular UI Router Multiple Views Example
  
+Demo: https://ReeganExE.github.io/angular-multiple-views
+ 
 ### Install
 ```sh
 # git clone https://github.com/ReeganExE/angular-multiple-views.git
