@@ -14,6 +14,162 @@
  */
  -->
 
+ <style type="text/css">
+   .flat-social a {
+       color: #FFF !important;
+       text-decoration: none !important;
+   }
+
+   /* Flat Share Buttons */
+
+   .flat-social li {
+       width: auto !important;
+       display: inline-block;
+       list-style: none;
+   }
+
+   .flat-social a {
+       padding: 5px 9px;
+       color: #FFF;
+       margin: 0 6px 2px 0;
+       display: inline-block;
+       line-height: 14px;
+       -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+               border-radius: 2px;
+   }
+
+   .flat-social a i {
+       margin-right: 3px;
+   }
+
+   .flat-social a:hover {
+       background: #444;
+   }
+
+
+   /* Social Icons Widget */
+
+   .social-icons {
+       text-align: center;
+   }
+   .social-icons a {
+       margin: 2px;
+       position: relative;
+       text-shadow: none;
+       display: inline-block;
+   }
+   .social-icons-widget .social-icons i:before {
+       display: inline-block;
+       width: 32px;
+       height: 32px;
+       line-height: 32px;
+       font-size: 18px;
+       -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+               border-radius: 2px;
+   }
+
+   .social-icons-widget .social-icons a {
+       color: #555 !important;
+   }
+
+   #theme-footer .social-icons-widget .social-icons a {
+       color: #999 !important;
+   }
+
+   .social-icons-widget .social-icons.social-colored a {
+       color: #FFF !important;
+   }
+
+   .social-icons.social-colored .fa-facebook:before,
+   .social-facebook,
+   .author-social a.social-facebook:hover,
+   .arq-lite-facebook a:hover i,
+   .arqam-lite-widget-counter.colored .arq-lite-facebook a i {
+       background: #39599f
+   }
+
+   .social-icons.social-colored .fa-twitter:before,
+   .social-twitter,
+   .author-social a.social-twitter:hover,
+   .arq-lite-twitter a:hover i,
+   .arqam-lite-widget-counter.colored .arq-lite-twitter a i {
+       background: #45b0e3
+   }
+
+   .social-icons.social-colored .fa-stumbleupon:before,
+   .social-stumble,
+   .author-social a.social-stumble:hover {
+       background: #eb4924
+   }
+
+   .social-icons.social-colored .fa-google-plus:before,
+   .social-google-plus,
+   .author-social a.social-google-plus:hover,
+   .arq-lite-google a:hover i,
+   .arqam-lite-widget-counter.colored .arq-lite-google a i {
+       background: #fa0101
+   }
+
+   .social-icons.social-colored .fa-linkedin:before,
+   .social-linkedin,
+   .author-social a.social-linkedin:hover {
+       background: #65b7d2
+   }
+
+   .social-icons.social-colored .fa-pinterest:before,
+   .social-pinterest,
+   .author-social a.social-pinterest:hover {
+       background: #E00707
+   }
+
+   .social-icons.social-colored .fa-youtube:before,
+   .social-youtube,
+   .author-social a.social-youtube:hover,
+   .arq-lite-youtube a:hover i,
+   .arqam-lite-widget-counter.colored .arq-lite-youtube a i {
+       background: #E00707
+   }
+
+   .social-github {
+       background: #1f1f1f;
+   }
+
+   .social-icons.social-colored .tieicon-instagram:before,
+   .social-instagram,
+   .author-social a.social-instagram:hover,
+   .arq-lite-instagram a:hover i,
+   .arqam-lite-widget-counter.colored .arq-lite-instagram a i {
+       background: #517fa4
+   }
+
+   .social-icons.social-colored .fa-behance:before,
+   .social-behance,
+   .author-social a.social-behance:hover,
+   .arq-lite-behance a:hover i,
+   .arqam-lite-widget-counter.colored .arq-lite-behance a i {
+       background: #1769ff
+   }
+
+   .social-icons.social-colored .tieicon-flickr:before,
+   .social-flickr,
+   .author-social a.social-flickr:hover {
+       background: #ff0084
+   }
+
+   .social-site {
+       background: #666
+   }
+
+
+   @media only screen and (max-width: 730px){
+     .flat-social a span {
+         display: none;
+     }
+   }
+ </style>
+
 
 <div class="panel panel-primary">
   <div class="panel-heading">
@@ -21,7 +177,14 @@
   </div>
   <div class="panel-body">
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-3">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+            <ul class="flat-social">
+              <li><a href="https://www.facebook.com/ReeganExE" class="social-facebook" rel="external" target="_blank"><i class="fa fa-facebook"></i> <span>ReeganExE</span></a></li>
+              <li><a href="https://www.google.com/+ReeganExE" class="social-google-plus" rel="external" target="_blank"><i class="fa fa-google-plus"></i> <span>+ReeganExE</span></a></li>
+              <li><a href="https://youtube.com/ReeganExE" class="social-youtube" rel="external" target="_blank"><i class="fa fa-youtube-play"></i> <span>ReeganExE</span></a></li>
+              <li><a href="https://github.com/ReeganExE" class="social-github" rel="external" target="_blank"><i class="fa fa-github"></i> <span>ReeganExE</span></a></li>
+              <li><a href="https://twitter.com/ReeganExE" class="social-twitter" rel="external" target="_blank"><i class="fa fa-twitter"></i> <span>ReeganExE</span></a></li>
+            </ul>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/JgY_acrrhA0" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
